@@ -72,7 +72,7 @@ public class FileStreamDownloader extends HttpServlet {
             webClient.getOptions().setUseInsecureSSL(true);
             //webClient.setJavaScriptEnabled(false);
             webClient.getOptions().setJavaScriptEnabled(false);
-            final HtmlPage page = webClient.getPage("https://filestream.me/");
+            final HtmlPage page = webClient.getPage("https://chiko.filestream.me/");
             //out.println(page.getTitleText());
             System.out.println("no of forms : " + page.getForms().size());
             HtmlForm form = page.getForms().get(1);
